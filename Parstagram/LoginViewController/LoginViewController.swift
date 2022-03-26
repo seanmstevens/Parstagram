@@ -42,11 +42,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
+        toggleButtonsState()
+        
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
         
-        toggleButtonsState()
         user.signUpInBackground { success, error in
             if let error = error {
                 print("Error signing up: \(error.localizedDescription)")

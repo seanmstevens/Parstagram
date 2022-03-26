@@ -13,12 +13,17 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
 
     @IBOutlet weak var imagePlaceholderView: UIImageView!
     @IBOutlet weak var commentField: UITextView!
+    @IBOutlet weak var postButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imagePlaceholderView.layer.cornerRadius = 12
         // Do any additional setup after loading the view.
+    }
+    
+    private func toggleButtonState() {
+        postButton.isEnabled.toggle()
     }
 
     @IBAction func onTapImage(_ sender: Any) {
@@ -46,6 +51,8 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     @IBAction func onPost(_ sender: Any) {
+        toggleButtonState()
+        
         let post = Post()
         post.caption = commentField.text
         post.author = PFUser.current()
@@ -58,6 +65,8 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
                 print("Post created!")
                 self.navigationController?.popViewController(animated: true)
             }
+            
+            self.toggleButtonState()
         }
     }
     /*
