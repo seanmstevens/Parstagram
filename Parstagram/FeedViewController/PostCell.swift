@@ -21,7 +21,7 @@ class PostCell: UICollectionViewCell {
             commentLabel.text = post.caption
             
             let url = URL(string: (post.media?.url)!)
-            postImageView.af.setImage(withURL: url!, imageTransition: .crossDissolve(0.2))
+            postImageView.af.setImage(withURL: url!, placeholderImage: UIImage(named: "image_placeholder"), imageTransition: .crossDissolve(0.2))
         }
     }
 
