@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4C2ADA135847781531D32FD0 /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD3E22B764F9E290434FEB6 /* Pods_Parstagram.framework */; };
+		571EC7E327F1305200CC0F31 /* PFObject+RelativeDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7E227F1305200CC0F31 /* PFObject+RelativeDateTime.swift */; };
+		571EC7E527F134FF00CC0F31 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7E427F134FF00CC0F31 /* Comment.swift */; };
+		571EC7E927F167D000CC0F31 /* IdentifiablePFObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7E827F167D000CC0F31 /* IdentifiablePFObject.swift */; };
+		571EC7EB27F1690B00CC0F31 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7EA27F1690B00CC0F31 /* CommentCell.swift */; };
+		571EC7ED27F20E2700CC0F31 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7EC27F20E2700CC0F31 /* FeedItem.swift */; };
+		571EC7EF27F220AA00CC0F31 /* Parstagram+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7EE27F220AA00CC0F31 /* Parstagram+UIColor.swift */; };
+		571EC7F327F7648200CC0F31 /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7F227F7648200CC0F31 /* AddCommentCell.swift */; };
+		571EC7F527F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7F427F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift */; };
+		571EC7F727F7AE1400CC0F31 /* PostSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7F627F7AE1400CC0F31 /* PostSectionHeaderView.swift */; };
 		5794456E27ED6A9C00AAD091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794456D27ED6A9C00AAD091 /* AppDelegate.swift */; };
 		5794457027ED6A9C00AAD091 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794456F27ED6A9C00AAD091 /* SceneDelegate.swift */; };
 		5794457527ED6A9C00AAD091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5794457327ED6A9C00AAD091 /* Main.storyboard */; };
@@ -47,6 +56,15 @@
 		17222C383AF6D1F8A1C15A6B /* Pods-Parstagram-ParstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram-ParstagramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parstagram-ParstagramUITests/Pods-Parstagram-ParstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		177CFDB78995FA073A9FBC9E /* Pods-Parstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.debug.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		44389C6EC946A885E9E677CF /* Pods-Parstagram-ParstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram-ParstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Parstagram-ParstagramUITests/Pods-Parstagram-ParstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		571EC7E227F1305200CC0F31 /* PFObject+RelativeDateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PFObject+RelativeDateTime.swift"; sourceTree = "<group>"; };
+		571EC7E427F134FF00CC0F31 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		571EC7E827F167D000CC0F31 /* IdentifiablePFObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiablePFObject.swift; sourceTree = "<group>"; };
+		571EC7EA27F1690B00CC0F31 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		571EC7EC27F20E2700CC0F31 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		571EC7EE27F220AA00CC0F31 /* Parstagram+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parstagram+UIColor.swift"; sourceTree = "<group>"; };
+		571EC7F227F7648200CC0F31 /* AddCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
+		571EC7F427F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		571EC7F627F7AE1400CC0F31 /* PostSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSectionHeaderView.swift; sourceTree = "<group>"; };
 		5794456A27ED6A9C00AAD091 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5794456D27ED6A9C00AAD091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5794456F27ED6A9C00AAD091 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +119,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571EC7E127F1304500CC0F31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				571EC7E227F1305200CC0F31 /* PFObject+RelativeDateTime.swift */,
+				571EC7E827F167D000CC0F31 /* IdentifiablePFObject.swift */,
+				571EC7EC27F20E2700CC0F31 /* FeedItem.swift */,
+				571EC7EE27F220AA00CC0F31 /* Parstagram+UIColor.swift */,
+				571EC7F427F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5794456127ED6A9C00AAD091 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +156,7 @@
 		5794456C27ED6A9C00AAD091 /* Parstagram */ = {
 			isa = PBXGroup;
 			children = (
+				571EC7E127F1304500CC0F31 /* Utils */,
 				579445AE27EE993800AAD091 /* Models */,
 				579445A227EE26B200AAD091 /* API */,
 				5794456D27ED6A9C00AAD091 /* AppDelegate.swift */,
@@ -186,7 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				579445A527EE26EC00AAD091 /* FeedViewController.swift */,
+				571EC7F627F7AE1400CC0F31 /* PostSectionHeaderView.swift */,
 				579445A927EE945300AAD091 /* PostCell.swift */,
+				571EC7EA27F1690B00CC0F31 /* CommentCell.swift */,
+				571EC7F227F7648200CC0F31 /* AddCommentCell.swift */,
 			);
 			path = FeedViewController;
 			sourceTree = "<group>";
@@ -195,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				579445AF27EE994700AAD091 /* Post.swift */,
+				571EC7E427F134FF00CC0F31 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,14 +496,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571EC7F327F7648200CC0F31 /* AddCommentCell.swift in Sources */,
 				579445AA27EE945300AAD091 /* PostCell.swift in Sources */,
 				579445A427EE26D500AAD091 /* LoginViewController.swift in Sources */,
+				571EC7F527F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift in Sources */,
+				571EC7E327F1305200CC0F31 /* PFObject+RelativeDateTime.swift in Sources */,
+				571EC7EF27F220AA00CC0F31 /* Parstagram+UIColor.swift in Sources */,
 				579445A127ED74A300AAD091 /* Secrets.swift in Sources */,
+				571EC7F727F7AE1400CC0F31 /* PostSectionHeaderView.swift in Sources */,
 				579445B027EE994700AAD091 /* Post.swift in Sources */,
+				571EC7E527F134FF00CC0F31 /* Comment.swift in Sources */,
+				571EC7ED27F20E2700CC0F31 /* FeedItem.swift in Sources */,
 				579445A627EE26EC00AAD091 /* FeedViewController.swift in Sources */,
+				571EC7E927F167D000CC0F31 /* IdentifiablePFObject.swift in Sources */,
 				5794456E27ED6A9C00AAD091 /* AppDelegate.swift in Sources */,
 				5794457027ED6A9C00AAD091 /* SceneDelegate.swift in Sources */,
 				579445A827EE40E300AAD091 /* CameraViewController.swift in Sources */,
+				571EC7EB27F1690B00CC0F31 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

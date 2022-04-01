@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        if UserDefaults.standard.bool(forKey: "loggedIn") {
+        if PFUser.current() != nil {
             let homeNavigationController = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController")
             window?.rootViewController = homeNavigationController
         } else {
@@ -63,7 +64,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         window.rootViewController = vc
-        UIView.transition(with: window, duration: 0.2, options: [.transitionCrossDissolve], animations: nil, completion: nil)
+        UIView.transition(with: window, duration: 0.2, options: [.transitionCrossDissolve, .curveEaseInOut], animations: nil, completion: nil)
     }
 }
 

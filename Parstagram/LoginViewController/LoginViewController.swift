@@ -26,10 +26,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignIn(_ sender: Any) {
+        toggleButtonsState()
+        
         let username = usernameField.text ?? ""
         let password = passwordField.text ?? ""
         
-        toggleButtonsState()
         PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
             if let error = error {
                 print("Error logging in: \(error.localizedDescription)")

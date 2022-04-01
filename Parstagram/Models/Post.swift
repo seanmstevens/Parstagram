@@ -7,12 +7,11 @@
 
 import Parse
 
-class Post: PFObject, Identifiable {
-    var id = UUID()
-
+class Post: IdentifiablePFObject {
     @NSManaged var caption: String?
     @NSManaged var media: PFFileObject?
     @NSManaged var author: PFUser?
+    @NSManaged var comments: [Comment]?
 }
 
 extension Post: PFSubclassing {
