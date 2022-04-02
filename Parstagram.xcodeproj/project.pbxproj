@@ -16,7 +16,7 @@
 		571EC7EF27F220AA00CC0F31 /* Parstagram+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7EE27F220AA00CC0F31 /* Parstagram+UIColor.swift */; };
 		571EC7F327F7648200CC0F31 /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7F227F7648200CC0F31 /* AddCommentCell.swift */; };
 		571EC7F527F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7F427F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift */; };
-		571EC7F727F7AE1400CC0F31 /* PostSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7F627F7AE1400CC0F31 /* PostSectionHeaderView.swift */; };
+		571EC7FB27F7CA3E00CC0F31 /* FeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EC7FA27F7CA3E00CC0F31 /* FeedDataSource.swift */; };
 		5794456E27ED6A9C00AAD091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794456D27ED6A9C00AAD091 /* AppDelegate.swift */; };
 		5794457027ED6A9C00AAD091 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794456F27ED6A9C00AAD091 /* SceneDelegate.swift */; };
 		5794457527ED6A9C00AAD091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5794457327ED6A9C00AAD091 /* Main.storyboard */; };
@@ -64,7 +64,7 @@
 		571EC7EE27F220AA00CC0F31 /* Parstagram+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parstagram+UIColor.swift"; sourceTree = "<group>"; };
 		571EC7F227F7648200CC0F31 /* AddCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
 		571EC7F427F764DD00CC0F31 /* UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+UITableViewHeaderFooterView+ReuseIdentifier.swift"; sourceTree = "<group>"; };
-		571EC7F627F7AE1400CC0F31 /* PostSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSectionHeaderView.swift; sourceTree = "<group>"; };
+		571EC7FA27F7CA3E00CC0F31 /* FeedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataSource.swift; sourceTree = "<group>"; };
 		5794456A27ED6A9C00AAD091 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5794456D27ED6A9C00AAD091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5794456F27ED6A9C00AAD091 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,10 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				579445A527EE26EC00AAD091 /* FeedViewController.swift */,
-				571EC7F627F7AE1400CC0F31 /* PostSectionHeaderView.swift */,
 				579445A927EE945300AAD091 /* PostCell.swift */,
 				571EC7EA27F1690B00CC0F31 /* CommentCell.swift */,
 				571EC7F227F7648200CC0F31 /* AddCommentCell.swift */,
+				571EC7FA27F7CA3E00CC0F31 /* FeedDataSource.swift */,
 			);
 			path = FeedViewController;
 			sourceTree = "<group>";
@@ -496,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571EC7FB27F7CA3E00CC0F31 /* FeedDataSource.swift in Sources */,
 				571EC7F327F7648200CC0F31 /* AddCommentCell.swift in Sources */,
 				579445AA27EE945300AAD091 /* PostCell.swift in Sources */,
 				579445A427EE26D500AAD091 /* LoginViewController.swift in Sources */,
@@ -503,7 +504,6 @@
 				571EC7E327F1305200CC0F31 /* PFObject+RelativeDateTime.swift in Sources */,
 				571EC7EF27F220AA00CC0F31 /* Parstagram+UIColor.swift in Sources */,
 				579445A127ED74A300AAD091 /* Secrets.swift in Sources */,
-				571EC7F727F7AE1400CC0F31 /* PostSectionHeaderView.swift in Sources */,
 				579445B027EE994700AAD091 /* Post.swift in Sources */,
 				571EC7E527F134FF00CC0F31 /* Comment.swift in Sources */,
 				571EC7ED27F20E2700CC0F31 /* FeedItem.swift in Sources */,

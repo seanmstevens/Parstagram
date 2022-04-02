@@ -12,9 +12,8 @@ import MessageInputBar
 class FeedViewController: UIViewController, UITableViewDelegate, MessageInputBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     
-    private typealias DataSource = UITableViewDiffableDataSource<IdentifiablePFObject.ID, FeedItem>
-    private typealias Snapshot = NSDiffableDataSourceSnapshot<IdentifiablePFObject.ID, FeedItem>
-    private typealias SectionSnapshot = NSDiffableDataSourceSectionSnapshot<FeedItem>
+    private typealias DataSource = FeedDataSource
+    private typealias Snapshot = NSDiffableDataSourceSnapshot<Post, FeedItem>
     
     private lazy var dataSource = createDataSource()
     var posts = [Post]()
@@ -71,12 +70,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, MessageInputBar
     
     private func applySnapshot(animatingDifferences: Bool = true) {
         var snapshot = Snapshot()
-        snapshot.appendSections(posts.map { $0.id })
+        snapshot.appendSections(posts)
         
         for post in posts {
-            snapshot.appendItems([FeedItem.post(post)], toSection: post.id)
-            snapshot.appendItems(post.comments?.map { FeedItem.comment($0) } ?? [], toSection: post.id)
-            snapshot.appendItems([FeedItem.addComment(post.id)], toSection: post.id)
+            snapshot.appendItems([FeedItem.post(post)], toSection: post)
+            snapshot.appendItems(post.comments?.map { FeedItem.comment($0) } ?? [], toSection: post)
+            snapshot.appendItems([FeedItem.addComment(post.id)], toSection: post)
         }
         
         dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
@@ -85,7 +84,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, MessageInputBar
     private func configureTableView() {
         tableView.delegate = self
         tableView.keyboardDismissMode = .interactive
-        tableView.register(PostSectionHeaderView.self, forHeaderFooterViewReuseIdentifier: PostSectionHeaderView.reuseIdentifier)
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshFeed), for: .valueChanged)
@@ -201,7 +199,7 @@ extension FeedViewController {
                 print("Comment saved!")
             }
         }
-        
+
         applySnapshot()
         dismissCommentBar()
     }
